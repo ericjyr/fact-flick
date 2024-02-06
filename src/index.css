@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  overflow: hidden; 
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +16,193 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main-content {
+  position: relative;
+  padding-top: 40px;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Hide overflowing content within the container */
+}
+
+.main-content::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  top: -550px;
+  right: -10px;
+  width: 120%; /* Adjust the width as needed */
+  height: 1800px;
+  background-image: url('./assets/img/blob.svg');
+  background-size: cover;
+  transform: skewX(10deg), 
+              rotate(180deg); 
+}
+
+/* Mobile styling */
+@media only screen and (max-width: 767px) {
+  .main-content {
+    background-color: #5bb1ed; /* Set the background color for mobile */
+    padding-top: 20px; /* Adjust padding for mobile */
+  }
+
+  .main-content::before {
+    content: none; /* Hide the background image on mobile */
+  }
+}
+
+.container {
+  width: 100vw;
+  padding: 10px;
+}
+
+.row {
+  width: 95vw;
+  margin: auto;
+}
+
+
+/******************** Header Styling *****************/
+.header-div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 55px;
+  height: auto;
+}
+
+.header-div > h1 {
+  font-size: 1.9em; /* Responsive font size */
+  font-weight: 700; /* Use the bold weight */
+  margin-left: 10px;
+}
+
+/******************** Content Styling *****************/
+
+.text-container {
+  width: 420px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.text-div {
+  width: 350px;
+}
+
+button {
+  border-radius: 8px !important;
+  height: 50px;
+  min-width: 150px;
+  padding: 0 20px;
+  border: 0;
+  background: #ffafaf;
+  font-weight: 500;
+  color: #fff;
+}
+
+.text-div > h2 {
+  font-size: 2.4em; /* Responsive font size */
+  font-weight: 700; /* Use the medium weight */
+  word-spacing: 3px;
+  line-height: 130%;
+}
+
+.text-div > p {
+  font-size: 1.2em; /* Responsive font size */
+  font-weight: 400; /* Use the regular weight */
+}
+
+
+.planet-div {
+  width: 420px;
+  margin: auto;
+}
+
+.planet-img {
+  width: 200px;
+}
+
+
+
+.planet-div img {
+  animation: updown 8s linear infinite;
+}
+
+@keyframes updown {
+  0%, 100% {
+    transform: translateY(-10px); /* Move up */
+  }
+  25% {
+    transform: translateX(5px); /* Move right */
+  }
+  50% {
+    transform: translateY(10px); /* Move down */
+  }
+  75% {
+    transform: translateX(-5px); /* Move left */
+  }
+}
+
+/******************** Phone Image Styling *****************/
+
+.img-div {
+  position: relative;
+  width: 500px;
+  height: 800px;
+  overflow: visible;
+}
+
+.img-div::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -150px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/img/phone-border.png');
+  background-size: cover;
+}
+
+
+.phone-demo {
+  position: relative;
+  width: 345px;
+  height: 642px;
+  overflow: visible;
+}
+
+.phone-demo::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -95px;
+  left: 73px;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/img/demo-phone.gif');
+  background-size: cover;
+}
+
+/******************** Custom Font Import *****************/
+
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
 }
