@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/fact-flick/static/css/main.f855e6bc.css",
-    "main.js": "/fact-flick/static/js/main.c947a744.js",
+    "main.css": "/fact-flick/static/css/main.1911228f.css",
+    "main.js": "/fact-flick/static/js/main.1ac9e595.js",
     "static/js/592.fae2d00a.chunk.js": "/fact-flick/static/js/592.fae2d00a.chunk.js",
-    "static/media/logo.svg": "/fact-flick/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/demo-phone.gif": "/fact-flick/static/media/demo-phone.4e280768b6649ece4db7.gif",
+    "static/media/planet.svg": "/fact-flick/static/media/planet.82a836de3a0ad0ff6132ec5737d945da.svg",
+    "static/media/CentraNo2-Bold.ttf": "/fact-flick/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/fact-flick/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/fact-flick/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/phone-border.png": "/fact-flick/static/media/phone-border.abf76b443f8969866b60.png",
+    "static/media/fact-flick-logo.png": "/fact-flick/static/media/fact-flick-logo.3d625cbbf0298972ad57.png",
     "index.html": "/fact-flick/index.html",
-    "main.f855e6bc.css.map": "/fact-flick/static/css/main.f855e6bc.css.map",
-    "main.c947a744.js.map": "/fact-flick/static/js/main.c947a744.js.map",
+    "static/media/blob.svg": "/fact-flick/static/media/blob.cba27a5d765fa1feff28.svg",
+    "main.1911228f.css.map": "/fact-flick/static/css/main.1911228f.css.map",
+    "main.1ac9e595.js.map": "/fact-flick/static/js/main.1ac9e595.js.map",
     "592.fae2d00a.chunk.js.map": "/fact-flick/static/js/592.fae2d00a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.c947a744.js"
+    "static/css/main.1911228f.css",
+    "static/js/main.1ac9e595.js"
   ]
 }
