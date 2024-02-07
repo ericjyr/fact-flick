@@ -8,6 +8,7 @@ const Cards = () => {
   const [facts, setFacts] = useState([]);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [initialPosition, setInitialPosition] = useState({ x: 0, y: 0 });
+  const [rotateNextCard, setRotateNextCard] = useState(false);
   const [colorIndex, setColorIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -21,11 +22,12 @@ const Cards = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+
       
       try {
         const response = await axios.get('https://api.api-ninjas.com/v1/facts?limit=30', {
           headers: {
-            'X-Api-Key': process.env.API_KEY,
+            'X-Api-Key': 'XctvhCKqaDcuB0Xym28vXg==GgEpCPs2uPxlOpOf',
           },
         });
 
@@ -72,12 +74,15 @@ const Cards = () => {
     document.documentElement.style.setProperty('--next-card-color', colors.nextCard);
     document.documentElement.style.setProperty('--flying-card-color', colors.flyingCard);
   
+    setRotateNextCard(true);
+  
     document.getElementById('next-card').classList.add('rotate-back');
     document.getElementById('swiper').classList.add(`fly-${newPosition}`);
   
     setTimeout(() => {
       document.getElementById('next-card').classList.remove('rotate-back');
       document.getElementById('swiper').classList.remove(`fly-${newPosition}`);
+      setRotateNextCard(false);
     }, 500);
   
     setTimeout(() => {
@@ -94,6 +99,7 @@ const Cards = () => {
 
   const handleDragStop = (e, ui) => {
     document.getElementById('swiper').classList.remove('fly-left', 'fly-right');
+    setRotateNextCard(false);
   };
 
   const renderCardContainer = () => {
