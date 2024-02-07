@@ -74,15 +74,12 @@ const Cards = () => {
     document.documentElement.style.setProperty('--next-card-color', colors.nextCard);
     document.documentElement.style.setProperty('--flying-card-color', colors.flyingCard);
   
-    setRotateNextCard(true);
-  
     document.getElementById('next-card').classList.add('rotate-back');
     document.getElementById('swiper').classList.add(`fly-${newPosition}`);
   
     setTimeout(() => {
       document.getElementById('next-card').classList.remove('rotate-back');
       document.getElementById('swiper').classList.remove(`fly-${newPosition}`);
-      setRotateNextCard(false);
     }, 500);
   
     setTimeout(() => {
@@ -99,7 +96,6 @@ const Cards = () => {
 
   const handleDragStop = (e, ui) => {
     document.getElementById('swiper').classList.remove('fly-left', 'fly-right');
-    setRotateNextCard(false);
   };
 
   const renderCardContainer = () => {
