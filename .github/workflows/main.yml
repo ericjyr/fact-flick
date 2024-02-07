@@ -24,3 +24,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
+
+      - name: Set Git user identity
+        run: |
+          git config user.email "ericjyr@gmail.com"
+          git config user.name "ericjyr"
