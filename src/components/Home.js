@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from "react-bootstrap";
 import factFlickLogo from '../assets/img/fact-flick-logo.png';
 import planetImg from "../assets/img/planet.svg";
-import phoneDemo from '../assets/img/demo-phone.gif';
 import '../index.css'
 import 'animate.css';
 
@@ -19,7 +18,7 @@ const Home = () => {
             </div>
         </Row>
         <Row>
-            <Col xs={6}>
+            <Col sm={12} md={6}>
             <div className={ "planet-div animate__animated animate__zoomIn" }>
             <img src={planetImg} alt="image of a planet" className='planet-img' />
                 </div>
@@ -28,12 +27,12 @@ const Home = () => {
                 <h2>Facts that Spark Enlightenment</h2>
                 <p>Explore fascinating facts that ignite curiosity and nurture mental vitality with Fact Flick.</p>
                 <Link to="/cards">
-                    <button>Let's Go</button>
+                    <button className='button-obj'>Let's Go</button>
                 </Link>
                 </div>
                 </div>
             </Col>
-            <Col xs={6}>
+            <Col sm={12} md={6}>
             <div className='img-div'>
               <div className='phone-demo'> </div>
             </div>

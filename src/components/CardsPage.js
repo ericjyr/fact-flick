@@ -1,12 +1,14 @@
 // src/CardsPage.js
 import React from 'react';
 import Cards from './Cards';
-import { Container, Row, Col } from "react-bootstrap";
+import '../index.css'; // Import your CSS file for styling
 
 const CardsPage = () => (
-  <div>
-    <h2>Cards Page</h2>
-    <Cards />
+  <div className='card-page'>
+    <div className='card-div'>
+      <div id="next-card" className='next-card'></div>
+      <Cards />
+    </div>
   </div>
 );
 
