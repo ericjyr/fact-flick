@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fact-flick/static/css/main.1911228f.css",
-    "main.js": "/fact-flick/static/js/main.1ac9e595.js",
+    "main.css": "/fact-flick/static/css/main.3c8dd589.css",
+    "main.js": "/fact-flick/static/js/main.67470c79.js",
     "static/js/592.fae2d00a.chunk.js": "/fact-flick/static/js/592.fae2d00a.chunk.js",
     "static/media/demo-phone.gif": "/fact-flick/static/media/demo-phone.4e280768b6649ece4db7.gif",
     "static/media/planet.svg": "/fact-flick/static/media/planet.82a836de3a0ad0ff6132ec5737d945da.svg",
@@ -12,12 +12,12 @@
     "static/media/fact-flick-logo.png": "/fact-flick/static/media/fact-flick-logo.3d625cbbf0298972ad57.png",
     "index.html": "/fact-flick/index.html",
     "static/media/blob.svg": "/fact-flick/static/media/blob.cba27a5d765fa1feff28.svg",
-    "main.1911228f.css.map": "/fact-flick/static/css/main.1911228f.css.map",
-    "main.1ac9e595.js.map": "/fact-flick/static/js/main.1ac9e595.js.map",
+    "main.3c8dd589.css.map": "/fact-flick/static/css/main.3c8dd589.css.map",
+    "main.67470c79.js.map": "/fact-flick/static/js/main.67470c79.js.map",
     "592.fae2d00a.chunk.js.map": "/fact-flick/static/js/592.fae2d00a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1911228f.css",
-    "static/js/main.1ac9e595.js"
+    "static/css/main.3c8dd589.css",
+    "static/js/main.67470c79.js"
   ]
 }
