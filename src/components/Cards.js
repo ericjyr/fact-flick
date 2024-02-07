@@ -21,8 +21,6 @@ const Cards = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-
-      const apiKey = process.env.REACT_APP_API_KEY;
       
       try {
         const response = await axios.get('https://api.api-ninjas.com/v1/facts?limit=30', {
