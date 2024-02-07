@@ -8,7 +8,6 @@ const Cards = () => {
   const [facts, setFacts] = useState([]);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [initialPosition, setInitialPosition] = useState({ x: 0, y: 0 });
-  const [rotateNextCard, setRotateNextCard] = useState(false);
   const [colorIndex, setColorIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -28,7 +27,7 @@ const Cards = () => {
       try {
         const response = await axios.get('https://api.api-ninjas.com/v1/facts?limit=30', {
           headers: {
-            'X-Api-Key': '',
+            'X-Api-Key': process.env.API_KEY,
           },
         });
 

@@ -20,7 +20,7 @@ const Home = () => {
         <Row>
             <Col sm={12} md={6}>
             <div className={ "planet-div animate__animated animate__zoomIn" }>
-            <img src={planetImg} alt="image of a planet" className='planet-img' />
+            <img src={planetImg} alt="planet" className='planet-img' />
                 </div>
                 <div className='text-container'>
                 <div className='text-div'>
