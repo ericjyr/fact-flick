@@ -7,10 +7,12 @@ Welcome to Fact Flick, a React-based app that brings you a Tinder-like swiping e
 <p align="center">
   <a href="https://ericjyr.github.io/fact-flick/">Visit Fact Flick</a>
 </p>
+<br>
+<br>
 
 
 
-## Features
+## <p align="center">More about Fact Flick</p>
 
 
 <table>
@@ -19,11 +21,26 @@ Welcome to Fact Flick, a React-based app that brings you a Tinder-like swiping e
       <img src="https://github.com/ericjyr/fact-flick/assets/87771108/e5a52c86-672c-481f-94c3-5a47fc13942f" alt="demo-phone" style="max-width: 100%;">
     </td>
     <td  width="50%" valign="top">
-      <ul>
-        <li><strong>Tinder-like Swiping:</strong> Explore interesting facts with a simple left or right swipe.</li>
-        <li><strong>Colorful Themes:</strong> Enjoy a visually appealing experience with dynamic color themes.</li>
-        <li><strong>Responsive Design:</strong> Fact Flick is designed to work seamlessly on various devices.</li>
-      </ul>
+      <p>
+          <strong>⏱️ One-Day Challenge:</strong>
+          I challenged myself to bring this project to life in just one day! From concept to deployment, the entire process was a whirlwind of creativity and coding. The goal was not just to build an app but to do it efficiently while maintaining a high-quality user experience.
+        </p>
+        <p>
+        <strong>🎨 Design and Experience:</strong>
+        This project was a fantastic opportunity for me to practice my React skills and create a visually appealing app with a Tinder-inspired interface. Each fact is presented on a card, and you can swipe left or right to explore a wealth of fascinating information.
+        </p>
+        <p>
+        <strong>🛠️ Tech Stack:</strong>
+        Built with React, Bootstrap, and additional libraries for swipe gestures, the app showcases my ability to leverage various tools for a seamless development experience.
+        </p>
+        <p>
+        <strong>📊 Continuous Learning:</strong>
+        Fact Flick is not just a project; it's a testament to my commitment to continuous learning. I utilized external APIs for fetching facts, implemented responsive design, and automated the deployment process using GitHub Actions.
+        </p>
+        <p>
+        <strong>🌐 Deployment:</strong>
+        The app is live on GitHub Pages, allowing you to experience the Fact Flick magic right in your browser. Check it out and enjoy a delightful journey through a world of intriguing facts!
+      </p>
     </td>
   </tr>
 </table>
