@@ -22,16 +22,21 @@ const Cards = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-
-      
       try {
-        const response = await axios.get('https://api.api-ninjas.com/v1/facts?limit=30', {
+        const response = await axios.get('https://catfact.ninja/facts?limit=50', {
           headers: {
-            'X-Api-Key': 'XctvhCKqaDcuB0Xym28vXg==GgEpCPs2uPxlOpOf',
+            'X-CSRF-TOKEN': 'Ew3wcWCBsLpVqtWah1LIfWgtLTZ9hz1fbVQVseXl',
           },
         });
 
-        setFacts(response.data);
+        const formattedFacts = response.data.data.map(item => ({
+          fact: item.fact
+        }));
+
+        // Shuffle the array using Fisher-Yates (Knuth) Shuffle algorithm
+        const shuffledFacts = shuffleArray(formattedFacts);
+
+        setFacts(shuffledFacts);
       } catch (error) {
         console.error('Error fetching facts:', error);
       }
@@ -39,6 +44,24 @@ const Cards = () => {
 
     fetchData();
   }, []);
+
+  // Fisher-Yates (Knuth) Shuffle algorithm
+  const shuffleArray = array => {
+      let currentIndex = array.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (currentIndex !== 0) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+    return array;
+  };
 
   useEffect(() => {
     const calculateInitialPosition = () => {
